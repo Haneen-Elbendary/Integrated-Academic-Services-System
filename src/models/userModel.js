@@ -6,6 +6,8 @@ const userSchema = new mongoose.Schema(
     name: {
       type: String,
       required: [true, 'Name is required'],
+      minlength: [20, 'Name must be at least 20 characters'],
+      maxlength: [100, 'Name must be less than 100 characters'],
       trim: true,
     },
     nationalID: {
@@ -69,6 +71,8 @@ const userSchema = new mongoose.Schema(
         return this.role === 'student' || this.role === 'employee';
       },
     },
+    passwordResetCode: String,
+    passwordResetExpires: Date,
   },
   { timestamps: true }
 );

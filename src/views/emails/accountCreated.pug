@@ -1,0 +1,35 @@
+doctype html
+html
+  head
+    style.
+      body { font-family: Arial, sans-serif; padding: 20px; color: #333; }
+      .container { max-width: 600px; margin: auto; background: #f9f9f9; padding: 20px; border-radius: 10px; }
+      h2 { color: #007bff; }
+      p { margin: 10px 0; }
+      .footer { margin-top: 20px; font-size: 12px; color: #555; }
+
+  body
+    .container
+      h2 Welcome to Our Academic System, #{name}!
+      p We are excited to inform you that your student account has been successfully created.
+      hr
+      p
+        strong College ID:
+        |  #{college_id}
+      p
+        strong Email:
+        |  #{email}
+      p
+        strong Department:
+        |  #{department}
+      p
+        strong Level:
+        |  #{level},
+        strong Term:
+        |  #{term}
+      hr
+      p You can now log in to your account with your Email and your National ID, explore the academic services provided.
+      p If you have any questions, feel free to contact support.
+      .footer
+        p Best Regards,
+        p <strong>Your University Administration</strong>

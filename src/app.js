@@ -95,8 +95,8 @@ app.use(compression());
 app.use(express.static(path.join(__dirname, 'public')));
 
 // Routes
-// app.use('/api/v1/students', studentRouter);
 
+app.use('/api/v1/student', studentRouter);
 app.use('/api/v1/admin', adminRouter);
 app.use('/api/v1/employee', employeeRouter);
 app.use('/api/v1/user', userRouter);
